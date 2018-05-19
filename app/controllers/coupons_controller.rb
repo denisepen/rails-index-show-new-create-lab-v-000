@@ -17,6 +17,7 @@ def create
   @coupon.coupon_code = params[:coupon_code]
   @coupon.store =  params[:store]
   @coupon.save
+  raiseparams.inspect
   redirect_to coupon_path(@coupon)
 end
 
